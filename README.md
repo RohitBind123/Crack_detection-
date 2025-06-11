@@ -4,11 +4,12 @@ This project implements a Convolutional Neural Network (CNN) using TensorFlow/Ke
 
 ## 📁 Project Structure
 CNN_Crack_Detection/
+```.
 ├── CNN_crack_detection_model.keras # Trained model file
 ├── Crack_Detection_Model.ipynb # Jupyter Notebook (Colab compatible)
 ├── sample_image.jpg # Example test image
 └── README.md 
-
+```
 
 ---
 
@@ -24,11 +25,11 @@ CNN_Crack_Detection/
 
 ## 🛠️ Tech Stack
 
-- Python
-- TensorFlow / Keras
-- OpenCV
-- NumPy
-- Google Colab
+```- Python```
+```- TensorFlow / Keras```
+```- OpenCV```
+```- NumPy```
+```- Google Colab```
 
 ---
 
@@ -52,11 +53,11 @@ keras.Sequential([
     layers.Dropout(0.5),
     layers.Dense(1, activation='sigmoid')
 ])
-
+```
 
 🖼️ Sample Prediction Code:
 from tensorflow import keras
-import cv2
+```import cv2
 import numpy as np
 
 # Load trained model
@@ -72,11 +73,11 @@ img = np.expand_dims(img, axis=0)
 # Predict
 pred = model.predict(img)
 print("🔴 Crack Detected" if pred[0][0] > 0.5 else "🟢 No Crack Detected")
-
+```
 📊 Results
-Metric	Value
-Accuracy	~99%
-Loss	~0.0001
+Metric	   Value
+Accuracy    ~99%
+Loss	   ~0.0001
 Input Size	128x128
 
 
