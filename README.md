@@ -36,6 +36,7 @@ CNN_Crack_Detection/
 
 Pyhton+tensorflow:
 
+```python
 keras.Sequential([
     layers.Conv2D(32, (3,3), activation='relu', input_shape=(128, 128, 3)),
     layers.MaxPooling2D((2,2)),
